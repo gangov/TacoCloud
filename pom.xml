@@ -6,7 +6,7 @@
 
 	<groupId>sia</groupId>
 	<artifactId>taco-cloud</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>taco-cloud</name>
@@ -72,12 +72,10 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- tag::springDataJpa[] -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
-		<!-- end::springDataJpa[] -->
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
@@ -87,6 +85,19 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
+		<!-- tag::springSecurity[] -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<!-- end::springSecurity[] -->
+		
+<dependency>
+    <groupId>org.springframework.security</groupId>
+    <artifactId>spring-security-test</artifactId>
+    <scope>test</scope> 
+</dependency>
+
 	</dependencies>
 
 	<build>
